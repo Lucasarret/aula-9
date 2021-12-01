@@ -7,7 +7,9 @@ function setup() {
 function draw() 
 {
   background(30);
-  box1.velocityX=box1.velocityX+1;
+  if(keyIsDown(RIGHT_ARROW)){
+    box1.position.x=box1.position.x+5;
+  }
   drawSprites();
 }
 
